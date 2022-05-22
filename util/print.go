@@ -11,7 +11,7 @@ func PrintTabbed(a ...any) {
 	fmt.Printf("	%s\n", a...)
 }
 
-//PrintTabbed Prints a message prepended with a tab to STDOUT when passed a format
+//PrintTabbedf Prints a message prepended with a tab to STDOUT when passed a format
 func PrintTabbedf(f string, a ...any) {
 	fmt.Printf("	%s", fmt.Sprintf(f, a...))
 }
