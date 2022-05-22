@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:bb435e30-5d57-48fd-8070-1c5e111faf57",
+  "serialNumber": "urn:uuid:a484e897-9db7-4c7d-b4c1-1c77d2e7598a",
   "version": 1,
   "metadata": {
-    "timestamp": "2022-05-22T12:24:28-06:00",
+    "timestamp": "2022-05-22T12:50:51-06:00",
     "tools": [
       {
         "vendor": "CycloneDX",
@@ -45,11 +45,11 @@
       }
     ],
     "component": {
-      "bom-ref": "pkg:golang/github.com/devops-kung-fu/common@v0.1.1-0.20220520154310-263140587a30?type=module",
+      "bom-ref": "pkg:golang/github.com/devops-kung-fu/common@v0.2.1-0.20220522182752-61f2b607971d?type=module",
       "type": "application",
       "name": "github.com/devops-kung-fu/common",
-      "version": "v0.1.1-0.20220520154310-263140587a30",
-      "purl": "pkg:golang/github.com/devops-kung-fu/common@v0.1.1-0.20220520154310-263140587a30?type=module",
+      "version": "v0.2.1-0.20220522182752-61f2b607971d",
+      "purl": "pkg:golang/github.com/devops-kung-fu/common@v0.2.1-0.20220522182752-61f2b607971d?type=module",
       "externalReferences": [
         {
           "url": "https://github.com/devops-kung-fu/common",
@@ -116,7 +116,7 @@
   ],
   "dependencies": [
     {
-      "ref": "pkg:golang/github.com/devops-kung-fu/common@v0.1.1-0.20220520154310-263140587a30?type=module",
+      "ref": "pkg:golang/github.com/devops-kung-fu/common@v0.2.1-0.20220522182752-61f2b607971d?type=module",
       "dependsOn": [
         "pkg:golang/github.com/gookit/color@v1.5.0?type=module"
       ]
