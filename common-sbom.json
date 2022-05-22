@@ -1,0 +1,138 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:bb435e30-5d57-48fd-8070-1c5e111faf57",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-05-22T12:24:28-06:00",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "cyclonedx-gomod",
+        "version": "v0.0.0-unset",
+        "hashes": [
+          {
+            "alg": "MD5",
+            "content": "fef17a9f71e43c899c3b0cb179fdbd1d"
+          },
+          {
+            "alg": "SHA-1",
+            "content": "1a28e1a8992dc85ed1e7b9662098d2f2209f3b42"
+          },
+          {
+            "alg": "SHA-256",
+            "content": "0f77e1e26d8ac88e210b19f67095a3068bf33e9216a8ce17b9f8f9d7b5c8d014"
+          },
+          {
+            "alg": "SHA-384",
+            "content": "a2d423df9bf4e5a92fcafe2eb9a9a97e4de5d62f7c4b1e002cbba6729546af4ec67251e23770895cace2c1f189c162e7"
+          },
+          {
+            "alg": "SHA-512",
+            "content": "1b1ddce1c9d3aa659e428c2afcc9d5f3ba3fca6b507517d3e988ba73515869ee623289c5829e21c9b45bc58dbf1446ee668865dcf47aa0fce503f2d660098228"
+          }
+        ],
+        "externalReferences": [
+          {
+            "url": "https://github.com/CycloneDX/cyclonedx-gomod",
+            "type": "vcs"
+          },
+          {
+            "url": "https://cyclonedx.org",
+            "type": "website"
+          }
+        ]
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:golang/github.com/devops-kung-fu/common@v0.1.1-0.20220520154310-263140587a30?type=module",
+      "type": "application",
+      "name": "github.com/devops-kung-fu/common",
+      "version": "v0.1.1-0.20220520154310-263140587a30",
+      "purl": "pkg:golang/github.com/devops-kung-fu/common@v0.1.1-0.20220520154310-263140587a30?type=module",
+      "externalReferences": [
+        {
+          "url": "https://github.com/devops-kung-fu/common",
+          "type": "vcs"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:golang/github.com/gookit/color@v1.5.0?type=module",
+      "type": "library",
+      "name": "github.com/gookit/color",
+      "version": "v1.5.0",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d4ea68c37f81583c2aa2befc0dc2642422309e4be2162fabace00d922f41505c"
+        }
+      ],
+      "purl": "pkg:golang/github.com/gookit/color@v1.5.0?type=module",
+      "externalReferences": [
+        {
+          "url": "https://github.com/gookit/color",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778?type=module",
+      "type": "library",
+      "name": "github.com/xo/terminfo",
+      "version": "v0.0.0-20210125001918-ca9a967f8778",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "42577222efcbeb7a0fa72bd098782f822724a75630e75d0a24ea97ec7db89a0f"
+        }
+      ],
+      "purl": "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778?type=module",
+      "externalReferences": [
+        {
+          "url": "https://github.com/xo/terminfo",
+          "type": "vcs"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20220520151302-bc2c85ada10a?type=module",
+      "type": "library",
+      "name": "golang.org/x/sys",
+      "version": "v0.0.0-20220520151302-bc2c85ada10a",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "746ccfc9d815b2a19c4d157088b2758d56ee7d8c26cc3dcb7d53cb2ac2a0fb49"
+        }
+      ],
+      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20220520151302-bc2c85ada10a?type=module"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:golang/github.com/devops-kung-fu/common@v0.1.1-0.20220520154310-263140587a30?type=module",
+      "dependsOn": [
+        "pkg:golang/github.com/gookit/color@v1.5.0?type=module"
+      ]
+    },
+    {
+      "ref": "pkg:golang/github.com/gookit/color@v1.5.0?type=module",
+      "dependsOn": [
+        "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778?type=module",
+        "pkg:golang/golang.org/x/sys@v0.0.0-20220520151302-bc2c85ada10a?type=module"
+      ]
+    },
+    {
+      "ref": "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778?type=module"
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/sys@v0.0.0-20220520151302-bc2c85ada10a?type=module"
+    }
+  ]
+}
