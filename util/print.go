@@ -66,5 +66,5 @@ func PrintErrf(f string, err error) {
 
 //printIcon Prints a colored square icon to STDOUT
 func printIcon(c color.Color) {
-	color.Style{c}.Print("■")
+	color.Style{c}.Print("■ ")
 }
