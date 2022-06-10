@@ -44,6 +44,5 @@ func generateRegex(extensions ...any) (regex *regexp.Regexp, err error) {
 	if err != nil {
 		return nil, err
 	}
-
 	return regex, nil
 }
