@@ -9,6 +9,7 @@ import (
 	"github.com/spf13/afero"
 )
 
+//FindByExtension walks a file tree and returns a list of files based on extensions passed
 func FindByExtension(afs *afero.Afero, path string, extensions ...any) (files []string, err error) {
 
 	regex, err := generateRegex(extensions)
