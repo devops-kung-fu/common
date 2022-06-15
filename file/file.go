@@ -9,7 +9,7 @@ import (
 	"github.com/spf13/afero"
 )
 
-func FindByExtension(afs *afero.Afero, path string, extensions ...any) (files []string, e error) {
+func FindByExtension(afs *afero.Afero, path string, extensions ...any) (files []string, err error) {
 
 	regex, err := generateRegex(extensions)
 	if err != nil {
