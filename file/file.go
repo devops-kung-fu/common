@@ -10,7 +10,7 @@ import (
 )
 
 //FindByExtension walks a file tree and returns a list of files based on extensions passed
-func FindByExtension(afs *afero.Afero, path string, extensions ...any) (files []string, err error) {
+func FindByExtension(afs *afero.Afero, path string, extensions []string) (files []string, err error) {
 
 	regex, err := generateRegex(extensions)
 	if err != nil {
@@ -32,7 +32,7 @@ func FindByExtension(afs *afero.Afero, path string, extensions ...any) (files []
 	return files, err
 }
 
-func generateRegex(extensions ...any) (regex *regexp.Regexp, err error) {
+func generateRegex(extensions []string) (regex *regexp.Regexp, err error) {
 
 	re := ".*\\.("
 	for _, val := range extensions {
