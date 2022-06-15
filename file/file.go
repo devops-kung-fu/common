@@ -26,9 +26,6 @@ func FindByExtension(afs *afero.Afero, path string, extensions []string) (files 
 		return nil
 	})
 
-	if err != nil {
-		return nil, err
-	}
 	return files, err
 }
 
