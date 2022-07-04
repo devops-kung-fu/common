@@ -1,55 +1,41 @@
 {
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:89b5b7a0-0ca4-4425-9ac3-31ab1fbdda1d",
+  "specVersion": "1.2",
+  "serialNumber": "urn:uuid:3c9cab30-d441-4c32-9d30-3841ba725365",
   "version": 1,
   "metadata": {
-    "timestamp": "2022-06-15T13:56:05-04:00",
+    "timestamp": "2022-07-04T09:50:10-06:00",
     "tools": [
       {
         "vendor": "CycloneDX",
         "name": "cyclonedx-gomod",
-        "version": "v0.0.0-unset",
+        "version": "v0.8.2",
         "hashes": [
           {
             "alg": "MD5",
-            "content": "bceda3314962bbf5ecac78332b282f25"
+            "content": "2fae1b517e34f532b24f832d5282d34d"
           },
           {
             "alg": "SHA-1",
-            "content": "b94b5ad2d73fd1bfde8b5b6c86ca0a78a525c2d4"
+            "content": "aa7190bc32cecebaf98e8551f92335518d6ed1a5"
           },
           {
             "alg": "SHA-256",
-            "content": "c02515d83a71090315a4f255544b3a5944a81c62ade23b58ca463df458f1591e"
-          },
-          {
-            "alg": "SHA-384",
-            "content": "efa79abe6f22eaead13ca6dbdc64b61e747fe97a92c9d2312a463298121072863cb3fddc9d06706c9a442bbfcb7b98d1"
+            "content": "2fd17a0d03f6614a16c6ea87656ff96f0e4dce19859b4f597e87d52018dba923"
           },
           {
             "alg": "SHA-512",
-            "content": "45d25593b8198c56f22e7540143901255b069bce3b6b0a11e599ecc2e96ccf0d23ee961ad0e5b9de0e331eea143dd734fa9604afea91fa9e1b937b998437809a"
-          }
-        ],
-        "externalReferences": [
-          {
-            "url": "https://github.com/CycloneDX/cyclonedx-gomod",
-            "type": "vcs"
-          },
-          {
-            "url": "https://cyclonedx.org",
-            "type": "website"
+            "content": "03ec9560eb767b228f15ef3b611c0363f4493be758bb810620dd0ad93e223bd348160f68754163d11db3a99d827286b9889d8588835c5ae1b9438c70e200ad32"
           }
         ]
       }
     ],
     "component": {
-      "bom-ref": "pkg:golang/github.com/devops-kung-fu/common@v0.2.2-0.20220523184516-e07a01aee9cd?type=module",
+      "bom-ref": "pkg:golang/github.com/devops-kung-fu/common@v0.0.0-20220704094605-8456b5af8e2c",
       "type": "application",
       "name": "github.com/devops-kung-fu/common",
-      "version": "v0.2.2-0.20220523184516-e07a01aee9cd",
-      "purl": "pkg:golang/github.com/devops-kung-fu/common@v0.2.2-0.20220523184516-e07a01aee9cd?type=module",
+      "version": "v0.0.0-20220704094605-8456b5af8e2c",
+      "purl": "pkg:golang/github.com/devops-kung-fu/common@v0.0.0-20220704094605-8456b5af8e2c",
       "externalReferences": [
         {
           "url": "https://github.com/devops-kung-fu/common",
@@ -60,7 +46,7 @@
   },
   "components": [
     {
-      "bom-ref": "pkg:golang/github.com/gookit/color@v1.5.1?type=module",
+      "bom-ref": "pkg:golang/github.com/gookit/color@v1.5.1",
       "type": "library",
       "name": "github.com/gookit/color",
       "version": "v1.5.1",
@@ -71,7 +57,7 @@
           "content": "56383654471d1e9c2afa863adecfe4b07ae0258093a346f05af9a6616744f5f4"
         }
       ],
-      "purl": "pkg:golang/github.com/gookit/color@v1.5.1?type=module",
+      "purl": "pkg:golang/github.com/gookit/color@v1.5.1",
       "externalReferences": [
         {
           "url": "https://github.com/gookit/color",
@@ -80,7 +66,7 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/github.com/spf13/afero@v1.8.2?type=module",
+      "bom-ref": "pkg:golang/github.com/spf13/afero@v1.8.2",
       "type": "library",
       "name": "github.com/spf13/afero",
       "version": "v1.8.2",
@@ -91,7 +77,7 @@
           "content": "c5e852c956b46271d6b09e3d2459633298351d7d7d57a3436757e49b55f39dba"
         }
       ],
-      "purl": "pkg:golang/github.com/spf13/afero@v1.8.2?type=module",
+      "purl": "pkg:golang/github.com/spf13/afero@v1.8.2",
       "externalReferences": [
         {
           "url": "https://github.com/spf13/afero",
@@ -100,7 +86,7 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778?type=module",
+      "bom-ref": "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778",
       "type": "library",
       "name": "github.com/xo/terminfo",
       "version": "v0.0.0-20210125001918-ca9a967f8778",
@@ -111,7 +97,7 @@
           "content": "42577222efcbeb7a0fa72bd098782f822724a75630e75d0a24ea97ec7db89a0f"
         }
       ],
-      "purl": "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778?type=module",
+      "purl": "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778",
       "externalReferences": [
         {
           "url": "https://github.com/xo/terminfo",
@@ -120,21 +106,21 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20220614162138-6c1b26c55098?type=module",
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20220704084225-05e143d24a9e",
       "type": "library",
       "name": "golang.org/x/sys",
-      "version": "v0.0.0-20220614162138-6c1b26c55098",
+      "version": "v0.0.0-20220704084225-05e143d24a9e",
       "scope": "required",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "3e03abdbb3a1531d8846a189d91c40588e1d250edb8bd712ac1f36bb31737d40"
+          "content": "0ac3ae3656ceb9fd26cf124879fafa438b8051eb51530644e2ab7b55fccffb1a"
         }
       ],
-      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20220614162138-6c1b26c55098?type=module"
+      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20220704084225-05e143d24a9e"
     },
     {
-      "bom-ref": "pkg:golang/golang.org/x/text@v0.3.7?type=module",
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.3.7",
       "type": "library",
       "name": "golang.org/x/text",
       "version": "v0.3.7",
@@ -145,38 +131,41 @@
           "content": "a25a70bcfd8a69c5b5656bec47bb90868c9362f280ba97d0ad118114cdf9d869"
         }
       ],
-      "purl": "pkg:golang/golang.org/x/text@v0.3.7?type=module"
+      "purl": "pkg:golang/golang.org/x/text@v0.3.7"
     }
   ],
   "dependencies": [
     {
-      "ref": "pkg:golang/github.com/devops-kung-fu/common@v0.2.2-0.20220523184516-e07a01aee9cd?type=module",
+      "ref": "pkg:golang/github.com/gookit/color@v1.5.1",
       "dependsOn": [
-        "pkg:golang/github.com/gookit/color@v1.5.1?type=module",
-        "pkg:golang/github.com/spf13/afero@v1.8.2?type=module"
+        "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778",
+        "pkg:golang/golang.org/x/sys@v0.0.0-20220704084225-05e143d24a9e"
       ]
     },
     {
-      "ref": "pkg:golang/github.com/gookit/color@v1.5.1?type=module",
+      "ref": "pkg:golang/github.com/spf13/afero@v1.8.2",
       "dependsOn": [
-        "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778?type=module",
-        "pkg:golang/golang.org/x/sys@v0.0.0-20220614162138-6c1b26c55098?type=module"
+        "pkg:golang/golang.org/x/text@v0.3.7"
       ]
     },
     {
-      "ref": "pkg:golang/github.com/spf13/afero@v1.8.2?type=module",
+      "ref": "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778"
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/sys@v0.0.0-20220704084225-05e143d24a9e"
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/text@v0.3.7"
+    },
+    {
+      "ref": "pkg:golang/github.com/devops-kung-fu/common@v0.0.0-20220704094605-8456b5af8e2c",
       "dependsOn": [
-        "pkg:golang/golang.org/x/text@v0.3.7?type=module"
+        "pkg:golang/github.com/gookit/color@v1.5.1",
+        "pkg:golang/github.com/spf13/afero@v1.8.2",
+        "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778",
+        "pkg:golang/golang.org/x/sys@v0.0.0-20220704084225-05e143d24a9e",
+        "pkg:golang/golang.org/x/text@v0.3.7"
       ]
-    },
-    {
-      "ref": "pkg:golang/github.com/xo/terminfo@v0.0.0-20210125001918-ca9a967f8778?type=module"
-    },
-    {
-      "ref": "pkg:golang/golang.org/x/sys@v0.0.0-20220614162138-6c1b26c55098?type=module"
-    },
-    {
-      "ref": "pkg:golang/golang.org/x/text@v0.3.7?type=module"
     }
   ]
 }
