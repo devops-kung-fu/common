@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.2",
-  "serialNumber": "urn:uuid:f934382c-a51c-4549-8ea2-4c21fdd72fd2",
+  "serialNumber": "urn:uuid:3c9cab30-d441-4c32-9d30-3841ba725365",
   "version": 1,
   "metadata": {
-    "timestamp": "2022-07-04T09:46:13-06:00",
+    "timestamp": "2022-07-04T09:50:10-06:00",
     "tools": [
       {
         "vendor": "CycloneDX",
@@ -31,11 +31,11 @@
       }
     ],
     "component": {
-      "bom-ref": "pkg:golang/github.com/devops-kung-fu/common@v0.0.0-20220704094044-39a69ddec850",
+      "bom-ref": "pkg:golang/github.com/devops-kung-fu/common@v0.0.0-20220704094605-8456b5af8e2c",
       "type": "application",
       "name": "github.com/devops-kung-fu/common",
-      "version": "v0.0.0-20220704094044-39a69ddec850",
-      "purl": "pkg:golang/github.com/devops-kung-fu/common@v0.0.0-20220704094044-39a69ddec850",
+      "version": "v0.0.0-20220704094605-8456b5af8e2c",
+      "purl": "pkg:golang/github.com/devops-kung-fu/common@v0.0.0-20220704094605-8456b5af8e2c",
       "externalReferences": [
         {
           "url": "https://github.com/devops-kung-fu/common",
@@ -158,7 +158,7 @@
       "ref": "pkg:golang/golang.org/x/text@v0.3.7"
     },
     {
-      "ref": "pkg:golang/github.com/devops-kung-fu/common@v0.0.0-20220704094044-39a69ddec850",
+      "ref": "pkg:golang/github.com/devops-kung-fu/common@v0.0.0-20220704094605-8456b5af8e2c",
       "dependsOn": [
         "pkg:golang/github.com/gookit/color@v1.5.1",
         "pkg:golang/github.com/spf13/afero@v1.8.2",

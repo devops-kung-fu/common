@@ -13,6 +13,6 @@ Common functions and general utilities used by [DKFM](https://github.com/devops-
 
 ## Software Bill of Materials
 
-```common``` uses the CycloneDX to generate a Software Bill of Materials in CycloneDX format (v1.4) every time a developer commits code to this repository. More information for CycloneDX is available [here](https://cyclonedx.org)
+```common``` uses the CycloneDX to generate a Software Bill of Materials in CycloneDX format (v1.4) every time a developer commits code to this repository (as long as [Hookz](https://github.com/devops-kung-fu/hookz) is being used and has been initialized in the working directory). More information for CycloneDX is available [here](https://cyclonedx.org)
 
 The current SBoM for ```common``` is available [here](common-sbom.json).
