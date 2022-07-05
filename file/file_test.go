@@ -7,6 +7,20 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+const BAD_REGEX = "^\\/(?!\\/)(.*?)"
+
+func TestFindByRegex(t *testing.T) {
+	afs := &afero.Afero{Fs: afero.NewMemMapFs()}
+
+	afs.WriteFile("example.txt", []byte("test"), 0644)
+	files, err := FindByRegex(afs, ".", "(.*)\\.txt")
+	assert.Len(t, files, 1)
+	assert.NoError(t, err)
+
+	_, err = FindByRegex(afs, ".", BAD_REGEX)
+	assert.Error(t, err)
+}
+
 func TestFindByExtension(t *testing.T) {
 
 	afs := &afero.Afero{Fs: afero.NewMemMapFs()}
@@ -18,7 +32,7 @@ func TestFindByExtension(t *testing.T) {
 	assert.Equal(t, 3, len(result))
 	assert.NoError(t, err)
 
-	result, err = FindByExtension(afs, ".", []string{"^\\/(?!\\/)(.*?)", "csv"})
+	result, err = FindByExtension(afs, ".", []string{BAD_REGEX, "csv"})
 	assert.Error(t, err)
 
 	afs.Mkdir("temp", 0644)
@@ -34,6 +48,6 @@ func Test_generateRegex(t *testing.T) {
 	assert.NotNil(t, result)
 	assert.Equal(t, ".*\\.(txt|csv)", result.String())
 
-	_, err = generateRegex([]string{"^\\/(?!\\/)(.*?)", "csv"})
+	_, err = generateRegex([]string{BAD_REGEX, "csv"})
 	assert.Error(t, err)
 }
