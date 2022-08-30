@@ -3,7 +3,7 @@ module github.com/devops-kung-fu/common
 go 1.18
 
 require (
-	github.com/gookit/color v1.5.1
+	github.com/gookit/color v1.5.2
 	github.com/spf13/afero v1.8.2
 	github.com/stretchr/testify v1.8.0
 )
