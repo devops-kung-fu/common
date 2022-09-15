@@ -26,7 +26,7 @@ type Response struct {
 }
 
 // LatestVersion returns the latest released version tag from github, assumes version is a tag
-func LatestVersion(owner, repo string) (version string, err error) {
+func LatestReleaseTag(owner, repo string) (version string, err error) {
 	url := fmt.Sprintf("https://api.github.com/repos/%s/%s/releases/latest", owner, repo)
 
 	req := HttpRequest.NewRequest()
