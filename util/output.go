@@ -8,7 +8,7 @@ import (
 	"sync"
 )
 
-//CaptureOutput captures any writing to the STDOUT/STDERR in the passed function and returns a string
+// CaptureOutput captures any writing to the STDOUT/STDERR in the passed function and returns a string
 func CaptureOutput(f func()) string {
 	reader, writer, err := os.Pipe()
 	if err != nil {

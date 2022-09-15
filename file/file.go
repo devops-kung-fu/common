@@ -26,7 +26,7 @@ func FindByRegex(afs *afero.Afero, root string, re string) (files []string, err 
 	return
 }
 
-//FindByExtension walks a file tree and returns a list of files based on extensions passed
+// FindByExtension walks a file tree and returns a list of files based on extensions passed
 func FindByExtension(afs *afero.Afero, path string, extensions []string) (files []string, err error) {
 
 	regex, err := generateRegex(extensions)
