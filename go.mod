@@ -7,7 +7,7 @@ require (
 	github.com/jarcoal/httpmock v1.2.0
 	github.com/kirinlabs/HttpRequest v1.1.1
 	github.com/spf13/afero v1.9.2
-	github.com/stretchr/testify v1.8.0
+	github.com/stretchr/testify v1.8.1
 )
 
 require (
