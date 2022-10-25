@@ -1,9 +1,21 @@
 {
     "cSpell.words": [
         "afero",
+        "anchore",
+        "coverprofile",
+        "cyclomatic",
+        "cyclonedx",
+        "errcheck",
         "Errf",
+        "gofmt",
+        "gomod",
+        "hookz",
+        "ignoretests",
         "Infof",
+        "kisielk",
+        "lucha",
         "Successf",
+        "syft",
         "Tabbedf",
         "Warningf"
     ]
