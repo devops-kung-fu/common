@@ -1,7 +1,7 @@
+// Package file contains functions for finding files.
 package file
 
 import (
-	"fmt"
 	"os"
 	"regexp"
 	"strings"
@@ -45,15 +45,24 @@ func FindByExtension(afs *afero.Afero, path string, extensions []string) (files 
 	return
 }
 
-func generateRegex(extensions []string) (regex *regexp.Regexp, err error) {
-	re := ".*\\.("
-	for _, val := range extensions {
-		re += fmt.Sprintf("%s|", val)
-	}
-	re = strings.TrimSuffix(re, "|")
-	re += string(")")
+// func generateRegex(extensions []string) (regex *regexp.Regexp, err error) {
+// 	re := ".*\\.("
+// 	for _, val := range extensions {
+// 		re += fmt.Sprintf("%s|", val)
+// 	}
+// 	re = strings.TrimSuffix(re, "|")
+// 	re += string(")")
 
-	regex, err = regexp.Compile(re)
+// 	regex, err = regexp.Compile(re)
+// 	if err != nil {
+// 		return nil, err
+// 	}
+// 	return regex, nil
+// }
+
+func generateRegex(extensions []string) (*regexp.Regexp, error) {
+	re := ".*\\.(" + strings.Join(extensions, "|") + ")"
+	regex, err := regexp.Compile(re)
 	if err != nil {
 		return nil, err
 	}

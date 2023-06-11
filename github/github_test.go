@@ -34,14 +34,5 @@ func TestLatestReleaseTag_Failure(t *testing.T) {
 }
 
 func testResponse() []byte {
-	response := `
-	{
-		"url": "https://api.github.com/repos/devops-kung-fu/bomber/releases/76185923",
-		"assets_url": "https://api.github.com/repos/devops-kung-fu/bomber/releases/76185923/assets",
-		"upload_url": "https://uploads.github.com/repos/devops-kung-fu/bomber/releases/76185923/assets{?name,label}",
-		"html_url": "https://github.com/devops-kung-fu/bomber/releases/tag/v0.2.1",
-		"tag_name": "v0.2.1"
-	}
-	`
-	return []byte(response)
+	return []byte(`{"tag_name": "v0.2.1"}`)
 }
