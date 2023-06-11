@@ -8,17 +8,16 @@ import (
 	"github.com/kirinlabs/HttpRequest"
 )
 
+const githubAPI = "https://api.github.com"
+
+// Response is the response from github
 type Response struct {
-	URL       string `json:"url"`
-	AssetsURL string `json:"assets_url"`
-	UploadURL string `json:"upload_url"`
-	HTMLURL   string `json:"html_url"`
-	TagName   string `json:"tag_name"`
+	TagName string `json:"tag_name"`
 }
 
 // LatestReleaseTag returns the latest released version tag from github, assumes version is a tag
 func LatestReleaseTag(owner, repo string) (version string, err error) {
-	url := fmt.Sprintf("https://api.github.com/repos/%s/%s/releases/latest", owner, repo)
+	url := fmt.Sprintf("%s/repos/%s/%s/releases/latest", githubAPI, owner, repo)
 
 	req := HttpRequest.NewRequest()
 
