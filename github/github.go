@@ -7,6 +7,7 @@ import (
 	"github.com/kirinlabs/HttpRequest"
 )
 
+// Response represents the response coming from GitHub
 type Response struct {
 	URL             string `json:"url"`
 	AssetsURL       string `json:"assets_url"`
@@ -25,7 +26,7 @@ type Response struct {
 	ZipballURL      string `json:"zipball_url"`
 }
 
-// LatestVersion returns the latest released version tag from github, assumes version is a tag
+// LatestReleaseTag returns the latest released version tag from github, assumes version is a tag
 func LatestReleaseTag(owner, repo string) (version string, err error) {
 	url := fmt.Sprintf("https://api.github.com/repos/%s/%s/releases/latest", owner, repo)
 
